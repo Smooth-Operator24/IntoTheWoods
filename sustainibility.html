@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into The Woods - Sustainability</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #4f7942;
+            --hover-green: #5a8a4a;
+            --text-light: #ffffff;
+            --bg-dark: #121212;
+            --font-family-main: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-family-main); background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
+
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 2rem 5%; }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--text-light); }
+        .back-home-btn { text-decoration: none; color: var(--text-light); border: 2px solid var(--primary-green); padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 500; transition: 0.3s; }
+        .back-home-btn:hover { background-color: var(--primary-green); color: var(--text-light); }
+
+        /* Hero Section */
+        .hero-section { position: relative; height: 60vh; width: 100%; background-color: #000; display: flex; justify-content: center; align-items: center; }
+        .hero-content { color: var(--text-light); text-align: center; }
+        .hero-content h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; }
+
+        /* Sustainability Section */
+        .sustainability-section { max-width: 800px; margin: 3rem auto; padding: 0 5%; text-align: center; }
+        .sustainability-section p { font-size: 1.1rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85); margin-bottom: 1.5rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .sustainability-section p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Into The Woods</a>
+        <a href="index.html" class="back-home-btn">Back to Home</a>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Sustainability</h1>
+        </div>
+    </div>
+
+    <section class="sustainability-section">
+        <p>Sustainability is at the heart of everything we do. At INTO THE WOODS, we believe in creating beauty that respects nature — not takes from it. Our designs are guided by a deep commitment to eco-conscious choices, from responsibly sourced materials to mindful production practices.</p>
+        <p>We work closely with partners who share our values, ensuring that every piece we create is both ethically made and environmentally kind. By choosing natural, durable, and renewable materials, we aim to reduce waste and celebrate the timeless beauty of the earth’s resources.</p>
+        <p>For us, sustainability isn’t just a practice — it’s a promise to nurture the planet that inspires us every day.</p>
+    </section>
+
+</body>
+</html>

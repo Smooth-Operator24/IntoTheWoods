@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into The Woods - Our Process</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- General Setup & Variables --- */
+        :root {
+            --primary-green: #4f7942;
+            --hover-green: #5a8a4a;
+            --text-light: #ffffff;
+            --text-dark: #1a1a1a;
+            --bg-dark: #121212;
+            --font-family-main: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-family-main); background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 2rem 5%; position: relative; }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--text-light); }
+        .back-home-btn { text-decoration: none; color: var(--text-light); border: 2px solid var(--primary-green); padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 500; transition: 0.3s; }
+        .back-home-btn:hover { background-color: var(--primary-green); color: var(--text-light); }
+
+        /* Hero Section */
+        .hero-section { position: relative; height: 60vh; width: 100%; background-color: #000; display: flex; justify-content: center; align-items: center; }
+        .hero-content { color: var(--text-light); text-align: center; }
+        .hero-content h1 { font-size: 3rem; font-weight: 800; }
+
+        /* Process Section */
+        .section-padding { padding: 6rem 0; }
+        .container h3 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--primary-green); }
+        .container p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; color: rgba(255,255,255,0.85); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .container h3 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Into The Woods</a>
+        <a href="index.html" class="back-home-btn">Back to Home</a>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Our Process</h1>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <h3>1. Inspiration from Nature</h3>
+            <p>We start by observing nature’s quiet details — the shape of a leaf, the texture of wood, the harmony of colors. These elements inspire every design, guiding us to create interiors that feel organic and alive.</p>
+
+            <h3>2. Thoughtful Sourcing</h3>
+            <p>Each material we use is handpicked by trusted vendors who share our passion for quality and sustainability. From natural fibers to exotic greens, we choose only the best — ensuring authenticity and longevity in every piece.</p>
+
+            <h3>3. Crafted with Care</h3>
+            <p>Our artisans and designers work together to blend modern design with natural elements, shaping spaces that are beautiful, functional, and full of life. Every product is handled with patience and attention to detail — no shortcuts, just honest craftsmanship.</p>
+
+            <h3>4. Bringing Nature Home</h3>
+            <p>Finally, we curate and install each element with intention, ensuring your space feels balanced, warm, and uniquely yours. The result is more than just décor — it’s an experience of living closer to nature, every single day.</p>
+        </div>
+    </section>
+
+</body>
+</html>
