@@ -3,144 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story | Into The Woods</title>
+    <title>Into The Woods - Our Story</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --primary-green: #4f7942;
             --hover-green: #5a8a4a;
-            --cta-green: #2a5242;
             --text-light: #ffffff;
-            --text-dark: #1a1a1a;
             --bg-dark: #121212;
-            --bg-medium-dark: #1c1c1c;
             --font-family-main: 'Inter', sans-serif;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: var(--font-family-main);
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-            line-height: 1.8;
-            padding: 0;
-            margin: 0;
-        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-family-main); background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
 
-        header {
-            background-color: var(--bg-medium-dark);
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 2rem 5%; }
+        .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--text-light); }
+        .back-home-btn { text-decoration: none; color: var(--text-light); border: 2px solid var(--primary-green); padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 500; transition: 0.3s; }
+        .back-home-btn:hover { background-color: var(--primary-green); color: var(--text-light); }
 
-        .logo {
-            color: var(--text-light);
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
+        /* Hero Section */
+        .hero-section { position: relative; height: 60vh; width: 100%; background-color: #000; display: flex; justify-content: center; align-items: center; }
+        .hero-content { color: var(--text-light); text-align: center; }
+        .hero-content h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
+        /* Story Section */
+        .story-section { max-width: 800px; margin: 3rem auto; padding: 0 5%; text-align: center; }
+        .story-section p { font-size: 1.1rem; line-height: 1.8; color: rgba(255, 255, 255, 0.85); margin-bottom: 1.5rem; }
 
-        nav ul li a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: var(--hover-green);
-        }
-
-        main {
-            padding: 6rem 10%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            color: var(--text-light);
-            text-align: center;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.85);
-            margin-bottom: 1.5rem;
-            text-align: justify;
-        }
-
-        .highlight {
-            color: var(--primary-green);
-            font-weight: 600;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-top: 2.5rem;
-            padding: 0.8rem 1.8rem;
-            background-color: var(--primary-green);
-            color: var(--text-light);
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-back:hover {
-            background-color: var(--hover-green);
-        }
-
-        footer {
-            background-color: var(--bg-medium-dark);
-            text-align: center;
-            padding: 2rem 0;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            main { padding: 4rem 7%; }
-            h1 { font-size: 2.3rem; }
+            .hero-content h1 { font-size: 2.2rem; }
+            .story-section p { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
+
     <header>
         <a href="index.html" class="logo">Into The Woods</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="index.html" class="back-home-btn">Back to Home</a>
     </header>
 
-    <main>
-        <h1>Our Story</h1>
-        <p>Our story began with a love for nature — the kind that calms your spirit, brightens your day, and makes any space feel like home. Surrounded by the rush of modern life, we wanted to create places where people could slow down, breathe deeply, and reconnect with the beauty of the natural world.</p>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+        </div>
+    </div>
 
-        <p>What started as a small idea — adding a touch of green to simple spaces — soon grew into a passion for designing interiors that feel alive. Every piece we create, from lush indoor plants to handcrafted décor, is chosen with care, inspired by the gentle textures, colors, and patterns found in nature.</p>
+    <section class="story-section">
+        <p>Our story began with a simple belief — that nature and design can coexist in harmony. INTO THE WOODS was born from a love of the wild and a passion for craftsmanship that honors the earth. Every creation tells a story of where it came from and the hands that shaped it.</p>
+        <p>What started as a small idea under the canopy of trees has grown into a movement that celebrates sustainability, beauty, and purpose. We draw inspiration from the textures, tones, and tranquility of nature to design pieces that bring the outdoors into your home — naturally and responsibly.</p>
+        <p>At INTO THE WOODS, we’re not just creating products. We’re crafting a connection — between people, nature, and the spaces they call home.</p>
+    </section>
 
-        <p>We believe that true beauty lies in simplicity and authenticity. Our work celebrates natural materials, earthy tones, and the quiet elegance of greenery. Each design tells a story — one that brings warmth, comfort, and a sense of belonging to your home or workspace.</p>
-
-        <p>At <span class="highlight">INTO THE WOODS</span>, we don’t just decorate interiors — we nurture spaces where nature and people thrive together. Because when we live close to nature, we live closer to ourselves.</p>
-
-        <a href="index.html" class="btn-back">← Back to Home</a>
-    </main>
-
-    <footer>
-        &copy; 2025 Into The Woods. All Rights Reserved.
-    </footer>
 </body>
 </html>
